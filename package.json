@@ -1,0 +1,25 @@
+{
+  "name": "glaveyard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Clothing brand created for people struggling with life",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "yarn prettier --write ."
+  },
+  "author": "@oevadee",
+  "license": "0BSD",
+  "dependencies": {
+    "gatsby": "^4.0.2",
+    "node-fetch": "^2.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.5.0"
+  }
+}
