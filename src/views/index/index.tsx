@@ -1,18 +1,23 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import styled from 'styled-components';
+
+const SWrapper = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
+const SParagraph = styled.p`
+    font-size: 36px;
+`;
 
 export const IndexView = () => {
     return (
-        <div>
-            <h1>Rendering Modes Starter</h1>
-            <ul>
-                <li>
-                    <Link to="/dsg">DSG page</Link>
-                </li>
-                <li>
-                    <Link to="/ssr">SSR page</Link>
-                </li>
-            </ul>
-        </div>
+        <SWrapper>
+            <SParagraph>Website in progress...</SParagraph>
+        </SWrapper>
     );
 };

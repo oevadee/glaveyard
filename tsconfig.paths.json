@@ -11,12 +11,10 @@
             "hooks/*": ["./src/hooks/*"],
             "locales/*": ["./src/locales/*"],
             "styles/*": ["./src/styles/*"],
-            "providers/*": ["./src/providers/*"],
             "utils/*": ["./src/utils/*"],
             "pages/*": ["./src/pages/*"],
             "router/*": ["./src/router/*"],
-            "views/*": ["./src/views/*"],
-            "apiTypes": ["../backend/schema.gql"]
+            "views/*": ["./src/views/*"]
         }
     }
 }

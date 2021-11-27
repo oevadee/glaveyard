@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Layout } from '../layout';
-import { IndexView } from '../views/index/index';
+import { Layout } from 'layouts/index';
+import { IndexView } from 'views/index';
 
-const IndexPage = () => {
+const IndexPage = (props) => {
+    console.log(props);
     return (
         <Layout>
             <IndexView />
