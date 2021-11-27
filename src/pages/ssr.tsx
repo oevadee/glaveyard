@@ -2,7 +2,13 @@ import * as React from 'react';
 import fetch from 'node-fetch';
 import { Link } from 'gatsby';
 
-const SSR = ({ serverData: { image } }) => (
+interface Props {
+    serverData: {
+        image: string;
+    };
+}
+
+const SSR = ({ serverData: { image } }: Props) => (
     <>
         <Link to="/">Home</Link>
         <br />
@@ -13,7 +19,7 @@ const SSR = ({ serverData: { image } }) => (
 
 export default SSR;
 
-export const getServerData = async ({ params }) => {
+export const getServerData = async () => {
     const data = await fetch(`https://dog.ceo/api/breeds/image/random`).then(
         (res) => res.json()
     );
