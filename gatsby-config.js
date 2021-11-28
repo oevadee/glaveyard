@@ -7,7 +7,6 @@ module.exports = {
         author: `@oevadee`,
     },
     plugins: [
-        `gatsby-plugin-tsconfig-paths`,
         {
             resolve: `gatsby-plugin-typescript`,
             options: {
