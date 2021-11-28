@@ -7,13 +7,16 @@ module.exports = {
         author: `@oevadee`,
     },
     plugins: [
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         {
-            resolve: `gatsby-plugin-typescript`,
+            resolve: 'gatsby-source-filesystem',
             options: {
-                isTSX: true, // defaults to false
-                jsxPragma: `jsx`, // defaults to "React"
-                allExtensions: true, // defaults to false
+                name: 'images',
+                path: './src/images/',
             },
+            __key: 'images',
         },
         {
             resolve: 'gatsby-plugin-google-fonts',

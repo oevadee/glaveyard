@@ -8,7 +8,6 @@ const SWrapper = styled.div`
     width: 100%;
     min-height: 100vh;
     padding: 0 24px;
-    background: ${({ theme }) => theme.colors.dark};
 `;
 
 const SMain = styled.main`

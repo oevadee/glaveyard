@@ -31,10 +31,29 @@ const SList = styled.ul`
 
 const SListItem = styled.li`
     cursor: pointer;
-    transition: ${({ theme }) => theme.transition};
 
-    &:hover {
-        color: ${({ theme }) => theme.colors.primary};
+    .navigation-active-item {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc(100% + 4px);
+            height: 4px;
+            bottom: -2px;
+            left: -2px;
+            border-radius: 2px;
+            background: ${({ theme }) => theme.colors.darkOlive};
+        }
+    }
+
+    > a {
+        text-decoration: none;
+        transition: ${({ theme }) => theme.transition};
+
+        &:hover {
+            color: ${({ theme }) => theme.colors.primary};
+        }
     }
 `;
 
@@ -46,8 +65,22 @@ export const Navigation = () => {
             </Link>
             <SNavWrapper>
                 <SList>
-                    <SListItem>News</SListItem>
-                    <SListItem>About us</SListItem>
+                    <SListItem>
+                        <Link
+                            to="/news"
+                            activeClassName="navigation-active-item"
+                        >
+                            News
+                        </Link>
+                    </SListItem>
+                    <SListItem>
+                        <Link
+                            to="/about-us"
+                            activeClassName="navigation-active-item"
+                        >
+                            About us
+                        </Link>
+                    </SListItem>
                 </SList>
                 <Button disabled>Shop</Button>
             </SNavWrapper>

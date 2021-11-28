@@ -2,10 +2,12 @@ import React from 'react';
 import { Layout } from 'layouts/index';
 import { AboutUsView } from 'views/about-us';
 
-export const AboutUsPage = () => {
+const AboutUsPage = () => {
     return (
         <Layout>
             <AboutUsView />
         </Layout>
     );
 };
+
+export default AboutUsPage;

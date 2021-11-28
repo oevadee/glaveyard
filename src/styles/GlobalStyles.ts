@@ -9,9 +9,11 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html {
+    background: #070600;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     ::-webkit-scrollbar {
         width: 8px;
     }
