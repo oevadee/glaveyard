@@ -9,4 +9,5 @@ export const theme = {
     dimentions: {
         nav: '80px',
     },
+    transition: 'ease-out 200ms',
 };
